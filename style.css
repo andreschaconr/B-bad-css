@@ -1,0 +1,533 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+  }
+*body {
+
+	font-family: 'Lora', serif;
+	background: #061F16;
+	margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+	width: 100%;
+	height: 100%;
+
+}
+
+/*CABECERA*/
+#main-header {
+	background:linear-gradient(90deg, #237A57 0%, #093028 99.99%, rgba(9, 48, 40, 0) 100%);
+	color: white;
+	height: 50px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	
+    
+}	
+	#main-header a {
+		color: white;
+	}
+	
+	
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 5px 0 0 20px;
+	text-decoration: none;
+}
+#menu-header{
+	float:right;
+	padding: 5px 20px 0 0;
+	display: none;
+
+}
+#titulo-header{
+  font-size: 40px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+	
+	
+	
+	
+	
+	
+
+/*
+ * Navegación
+ */
+nav {
+	display: inline;
+	float: right;
+}
+	nav ul {
+    font-size: 25px;
+    font-weight: 500;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 10px;
+    justify-content: space-between;
+    margin-right:10px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 50px;
+      
+		}
+			
+			nav ul li a {
+				
+				padding: 0 10px;
+				text-decoration: none;
+                margin-right:10px;
+
+			}
+			
+				nav ul li a:hover {
+					background: #237A57;
+				}
+	
+
+
+
+/************ 
+//------------------------------
+// CONTENIDO
+//------------------------------
+************/
+#main-pag1{
+	padding-top: 50px;
+	width: 100%;
+	height:100vh;
+	background-image:url(img/breaking-bad.jpg);
+	background-size:cover;
+	background-position: center center;
+	mix-blend-mode: normal;
+	
+}
+.pag-1{	
+	position: center;
+	font-style: normal;
+	text-align: center;
+	color: #FFFFFF;
+}
+#main-pag2{
+	width: 100%;
+	height:100vh ;
+	background: linear-gradient(180deg, #000000 0%, #093028 100%);
+	
+    background-image: url(img/bbp2desk_auto_x2.jpg);
+	background-position: center center;
+	background-size:cover;
+	mix-blend-mode: normal;
+}
+.sytax{
+position: relative;
+width: 340px;
+height: 88px;
+left: 95px;
+top: 53%;
+font-size: 5vw;
+line-height: 92px;
+color: #FFFFFF;
+
+}
+.boxwhite{
+	
+position: relative;
+border: 3px solid #FFFFFF;
+width: 40%;
+height: 30%;
+left: 63px;
+top: 55%;
+color: #FFFFFF;
+font-size: 2vw;;
+max-width: 800px;
+
+
+}
+
+  .sytax-pa {
+	
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	
+	top: 30%;
+    left: 5%;
+	margin-top:5%;
+  }
+
+
+/*PAG--3*/
+#main-pag3{
+	width: 100%;
+	height:100vh ;
+	background: #061F16;
+}
+
+.cast {
+	width: 97%;
+	margin: auto;
+	display: grid;
+	gap: 20px;
+}
+#title{
+	position: center absolute;
+	font-style: normal;
+	font-size: 4em;
+	text-align: center;
+	color: #FFFFFF;
+	
+}
+	
+
+
+
+
+.cast-character {
+	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	
+
+}
+
+.character {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+.character .name {
+	height: 100%;
+	color: #FFFFFF;
+	font-size: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+/*PAG--4*/
+#main-pag4{
+	
+	padding-top: 5vw;
+	background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 110vh;
+    background-color: #061F16;
+	
+}
+#seasons-slider{
+	
+	margin: auto;
+	background-color: white;
+	max-width: 80%;
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	max-width: 800px;
+
+	
+  }
+  
+  #seasons-slider > ul, li {
+	  padding: 0;
+	  margin: 0;
+	  list-style: none;
+	  
+  }
+  
+  #seasons-slider > ul.slider{
+	position: relative;
+	width: 100%;
+	height: 700px;
+  }
+  
+  #seasons-slider > ul.slider h1{
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 10px;
+	left: 50%;
+	top: 100px;
+	transform: translate(-50%, -50%);
+  }
+  
+  #seasons-slider > ul.slider li {
+	  position: absolute;
+	  left: 0px;
+	  top: 0px;
+	  opacity: 0;
+	  width: inherit;
+	  height: inherit;
+	  transition: opacity 0.7s;
+	  background:#fff;
+  }
+  
+  #seasons-slider > ul.slider li img{
+	width: 100%;
+	height: 700px;
+	object-fit: fill;
+	
+  }
+  
+  #seasons-slider > ul.slider li:first-child {
+	  opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  #seasons-slider > ul.slider li:target {
+	  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  #seasons-slider > .menu{
+	text-align: center;
+	display: grid;
+	grid-auto-flow: column;
+	margin: 20px;
+  }
+  
+  #seasons-slider > .menu li{
+	text-align: center;
+	justify-content: space-between;
+  }
+  
+  #seasons-slider > .menu li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	background-color: #061F16;
+	padding: 10px;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 100%;
+	justify-content: space-between;
+  }
+  #seasons-slider > .menu li :hover{
+	background: #237A57;
+  }
+	
+  #main-pag5{
+	
+	
+	background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    background-color: #061F16;
+	
+}
+.spinoff {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	display:flex;
+	
+	
+}
+
+
+
+
+.spin-off {
+	
+	width: 50%;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	
+}
+
+
+
+/************
+//-----------------------------
+// PIE PÁGINA
+//-----------------------------
+************/
+#main-footer {
+	background: #000000;
+	color: white;
+	text-align: center;
+	height: 30%;
+	margin-top: 0px;
+}
+.footer{
+	
+	display: flex;
+    flex-wrap: wrap;
+}
+.footer>* {
+    margin: 0 10px;
+    flex: 1 1 200px;
+}
+.footer-text{
+	padding-top: 50px;
+	font-size: 1.5em;
+}
+.social{
+	padding: 30px;
+	display: grid;
+	
+
+}
+.social-net{
+	text-align: center;
+	display: grid;
+	grid-auto-flow: column;
+	
+
+}
+@media screen and (max-height:910px)
+{
+
+	#main-pag3{
+		height: 120vh;
+	}
+	#main-pag4{
+		height: 110vh;
+	}
+}
+@media screen and (max-height:824px)
+{
+
+	#main-pag3{
+		height: 140vh;
+	}
+	#main-pag4{
+		height: 140vh;
+	}
+}
+@media screen and (max-height:641px)
+{
+
+}
+@media screen and (min-width:1400px)
+{
+	.boxwhite {
+		font-size: 1.8em;
+	  }
+	
+}
+@media screen and (max-height:880px)
+{
+	#main-pag3{
+		width: 100%;
+		height:100% ;
+	}
+	
+}
+@media screen and (max-width:840px)
+{
+	
+	#titulo-header{
+		display: none;
+	  }
+	  .boxwhite {
+		font-size: 2vw;
+	  }
+	  #main-pag1{
+		
+		background-image:url(img/breaking-badta.jpg);
+		background-size:cover;
+		background-position: center center;
+		mix-blend-mode: normal;
+}
+#main-pag2{
+	
+	
+    background-image: url(img/bbp2desk_auto_x2tab.jpg);
+	background-position: center center;
+	background-size:cover;
+	mix-blend-mode: normal;
+}
+}
+@media screen and (max-width:578px)
+{
+	nav ul {
+		display:none;
+		}
+	
+	#titulo-header{
+		display: none;
+	  }
+	  .boxwhite {
+		  left:23px;
+		  width: 50%;
+		font-size: 0.9em;
+	  }
+	  #main-pag3{
+		width: 100%;
+		height:270vh ;
+		
+	}
+	  .cast-character {
+	
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+	.character .name {
+		
+		font-size: 2em;
+		
+	}
+	#title{
+		font-size: 2.5em;
+	}
+	.footer-text{
+		padding-top: 10px;
+		font-size: 1em;
+	}
+	.sytax{
+		position: relative;
+		width: 340px;
+		height: 88px;
+		left: 20px;
+		top: 55%;
+		font-size: 2.5em;
+		}
+		#main-pag5
+		{
+			height: 200vh;
+        }
+		.spinoff {
+			display: grid;	
+		}
+		.spin-off {
+	
+			width: 100%;
+			
+			padding: 20px;
+			position: relative;
+			overflow: hidden;
+			background-size: cover;
+			background-position: center center;
+			
+		}
+		#menu-header{
+			display: grid;
+}
+#menu-header :hover{
+	background: #237A57;
+}
+
+}
+	
